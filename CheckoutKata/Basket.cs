@@ -11,7 +11,7 @@ namespace CheckoutKataNS
         public void AddItem(Item SKU, Item[] basket)
         {
             SKU.IncreaseStock();
-            // calculate total
+            CalculateBasketTotal(basket);
         }
 
         public void CalculateBasketTotal(Item[] basket)

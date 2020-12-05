@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "ufYAVioBCjhokDnHCNh/tE57kJesq5OkIam5PaVkiwe0zHQ93dzCcWpdi28ARlZIkzLM1ZiZKp2fk4sRqbEPYw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\lonan\\source\\repos\\CheckoutKata\\CheckoutKata\\CheckoutKata.csproj",
+  "expectedPackageFiles": [
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

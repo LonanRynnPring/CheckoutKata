@@ -6,5 +6,12 @@ namespace CheckoutKataNS
 {
     class Basket
     {
+        public double basketTotal;
+
+        public void AddItem(Item SKU, int[] basket)
+        {
+            SKU.IncreaseStock();
+            // calculate total
+        }
     }
 }

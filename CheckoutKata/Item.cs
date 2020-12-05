@@ -63,7 +63,10 @@ namespace CheckoutKataNS
 
         private double ThreeForFortyDiscount()
         {
-            return _amount * _unitPrice;
+            int numberOfTimesDiscountUsed = (_amount / 3);
+            int numberBoughtAtFullPrice = _amount % 3;
+            double total = numberOfTimesDiscountUsed * 40 + numberBoughtAtFullPrice * _unitPrice;
+            return total;
         }
 
         private double TwentyFivePercentDiscount()

@@ -24,5 +24,15 @@ namespace CheckoutKataNS
         {
             get { return _unitPrice; }
         }
+
+        public void IncreaseStock()
+        {
+            _amount++;
+        }
+
+        public double Cost()
+        {
+            return _amount * _unitPrice;
+        }
     }
 }

@@ -10,6 +10,9 @@ namespace CheckoutKataNS
         private double _unitPrice;
         private string _discount;
 
+        private string DISCOUNT_ONE = "3 for 40";
+        private string DISCOUNT_TWO = "25% off for every 2 purchased together";
+
         public Item(int amount, double unitPrice, string discount)
         {
             _amount = amount;
@@ -39,7 +42,18 @@ namespace CheckoutKataNS
 
         public double Cost()
         {
-            return StandardPricing();
+            if (Discount == DISCOUNT_ONE)
+            {
+                return ThreeForFortyDiscount();
+            }
+            else if (Discount == DISCOUNT_TWO)
+            {
+                return TwentyFivePercentDiscount();
+            }
+            else
+            {
+                return StandardPricing();
+            }
         }
 
         private double StandardPricing()

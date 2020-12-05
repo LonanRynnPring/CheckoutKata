@@ -71,7 +71,10 @@ namespace CheckoutKataNS
 
         private double TwentyFivePercentDiscount()
         {
-            return _amount * _unitPrice;
+            int numberOfItemsDiscountUsedOn = 2 * (_amount / 2);
+            int numberBoughtAtFullPrice = _amount % 2;
+            double total = numberOfItemsDiscountUsedOn * (_unitPrice * 0.75) + numberBoughtAtFullPrice * _unitPrice;
+            return total;
         }
     }
 }

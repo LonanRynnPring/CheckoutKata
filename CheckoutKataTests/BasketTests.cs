@@ -15,10 +15,10 @@ namespace CheckoutKataTests
             // Arrange
             double expected = 10;
             Basket checkout = new Basket();
-            Item A = new Item(0, 10);
-            Item B = new Item(0, 15);
-            Item C = new Item(0, 40);
-            Item D = new Item(0, 55);
+            Item A = new Item(0, 10, "none");
+            Item B = new Item(0, 15, "3 for 40");
+            Item C = new Item(0, 40, "none");
+            Item D = new Item(0, 55, "25% off for every 2 purchased together");
             Item[] basket = { A, B, C, D };
 
             // Act
@@ -35,10 +35,10 @@ namespace CheckoutKataTests
             // Arrange
             double expected = 40;
             Basket checkout = new Basket();
-            Item A = new Item(0, 10);
-            Item B = new Item(0, 15);
-            Item C = new Item(0, 40);
-            Item D = new Item(0, 55);
+            Item A = new Item(0, 10, "none");
+            Item B = new Item(0, 15, "3 for 40");
+            Item C = new Item(0, 40, "none");
+            Item D = new Item(0, 55, "25% off for every 2 purchased together");
             Item[] basket = { A, B, C, D };
 
             // Act

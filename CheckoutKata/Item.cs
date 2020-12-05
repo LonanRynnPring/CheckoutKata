@@ -8,11 +8,13 @@ namespace CheckoutKataNS
     {
         private int _amount;
         private double _unitPrice;
+        private string _discount;
 
-        public Item(int amount, double unitPrice)
+        public Item(int amount, double unitPrice, string discount)
         {
             _amount = amount;
             _unitPrice = unitPrice;
+            _discount = discount;
         }
 
         public int Amount
@@ -23,6 +25,11 @@ namespace CheckoutKataNS
         public double UnitPrice
         {
             get { return _unitPrice; }
+        }
+
+        public string Discount
+        {
+            get { return _discount; }
         }
 
         public void IncreaseStock()

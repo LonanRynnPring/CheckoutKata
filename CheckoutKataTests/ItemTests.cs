@@ -90,6 +90,5 @@ namespace CheckoutKataTests
                 Assert.AreEqual(expected, actual);
             }
         }
-
     }
 }

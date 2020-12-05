@@ -32,6 +32,21 @@ namespace CheckoutKataNS
 
         public double Cost()
         {
+            return StandardPricing();
+        }
+
+        private double StandardPricing()
+        {
+            return _amount * _unitPrice;
+        }
+
+        private double ThreeForFortyDiscount()
+        {
+            return _amount * _unitPrice;
+        }
+
+        private double TwentyFivePercentDiscount()
+        {
             return _amount * _unitPrice;
         }
     }

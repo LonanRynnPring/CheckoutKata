@@ -4,7 +4,7 @@ using System.Text;
 
 namespace CheckoutKataNS
 {
-    class Basket
+    public class Basket
     {
         public double basketTotal;
 

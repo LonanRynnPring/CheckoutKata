@@ -4,7 +4,7 @@ using System.Text;
 
 namespace CheckoutKataNS
 {
-    class Item
+    public class Item
     {
         private int _amount;
         private double _unitPrice;
